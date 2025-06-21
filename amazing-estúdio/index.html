@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estúdio Som da Alma</title>
+  <link rel="stylesheet" href="css/usar em tudo.css">
+</head>
+<body>
+
+  <header>
+    <h1>AMAZING STUDIO</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Grave seu som com qualidade profissional</h2>
+    <p>Produção, mixagem e masterização em um ambiente criativo e acolhedor.</p>
+    <a href="contato.html" class="btn">Agende sua sessão</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Amazing Studio. Todos os direitos reservados.</p>
+  </footer>
+
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hero = document.querySelector('.hero');
+    // Delay para mostrar o hero com transição suave
+    setTimeout(() => {
+      hero.classList.add('visible');
+    }, 200);
+
+    // Mudança do header ao scroll para dar feedback visual
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      if(window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>
